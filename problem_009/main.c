@@ -13,12 +13,9 @@
 
 int main(void)
 {
-    int a, b, c;
-    for (a = 0; a < 1000; a++)
-    {
-        for (b = 0; b < 1000; b++)
-        {
-            for (c = 0; c < 1000; c++)
+    for (int a = 0; a < 1000; a++)
+        for (int b = 0; b < 1000; b++)
+            for (int c = 0; c < 1000; c++)
             {
                 if (!(a < b) || !(b < c))
                     continue;
@@ -31,6 +28,4 @@ int main(void)
                     printf("product is %d\n", a*b*c);
                 }
             }
-        }
-    }
 }
