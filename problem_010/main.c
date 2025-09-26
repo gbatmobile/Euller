@@ -62,9 +62,7 @@ int is_prime(prime_factors_t **prime_factors, long unsigned int i)
         new_node->next = NULL;
     }
     else
-    {
         old_prime_ptr->next = new_node;
-    }
 
     /* we can return the proper number */
     return i;
